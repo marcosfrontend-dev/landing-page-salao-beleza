@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Studio | Beleza & Estética</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVEGAÇÃO -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">AC <span>STUDIO</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#sobre">O Studio</a></li>
+                    <li><a href="#servicos">Procedimentos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#agendar" class="btn btn-nav" onclick="openModal()">Agendar Horário</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">Beleza & Estética Avançada</span>
+            <h1>Realce sua beleza natural com <span>sofisticação e cuidado</span></h1>
+            <p>Atendimento exclusivo e procedimentos personalizados para transformar seu bem-estar e autoestima.</p>
+            <div class="hero-btns">
+                <button class="btn btn-primary" onclick="openModal()">Agendar Atendimento</button>
+                <a href="#servicos" class="btn btn-secondary">Conhecer Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+        <div class="container sobre-grid">
+            <div class="sobre-info">
+                <h2>Experiência única em <span>estética e bem-estar</span></h2>
+                <p>No AC Studio Beleza & Estética, combinamos técnicas modernas, produtos de alta qualidade e um
+                    ambiente acolhedor projetado para oferecer a você momentos de relaxamento e renovação.</p>
+
+                <ul class="diferenciais">
+                    <li><strong>✨ Atendimento Exclusivo:</strong> Avaliação personalizada antes de cada procedimento.
+                    </li>
+                    <li><strong>✨ Produtos de Alta Linha:</strong> Cosméticos e equipamentos certificados.</li>
+                    <li><strong>✨ Ambiente Premium:</strong> Espaço aconchegante para o seu momento de autocuidado.</li>
+                </ul>
+            </div>
+            <div class="stats-card">
+                <div class="stat-item">
+                    <h3>+1.200</h3>
+                    <p>Clientes Atendidas</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Atendimento Personalizado</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4.9 ★</h3>
+                    <p>Avaliação das Clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS / PROCEDIMENTOS -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos <span>Procedimentos</span></h2>
+            <div class="cards-grid">
+
+                <div class="card">
+                    <h3>Design de Sobrancelhas</h3>
+                    <p class="price">R$ 80<span> / sessão</span></p>
+                    <ul>
+                        <li>Mapeamento facial personalizado</li>
+                        <li>Design com Henna ou Tintura</li>
+                        <li>Epilação egípcia (linha)</li>
+                        <li>Finalização com regenerador</li>
+                    </ul>
+                    <button class="btn btn-card" onclick="openModal('Design de Sobrancelhas')">Agendar</button>
+                </div>
+
+                <div class="card featured">
+                    <span class="popular-tag">Mais Desejado</span>
+                    <h3>Lash Lifting / Cílios</h3>
+                    <p class="price">R$ 150<span> / sessão</span></p>
+                    <ul>
+                        <li>Curvatura e hidratação dos fios</li>
+                        <li>Tintura de longa duração</li>
+                        <li>Efeito rímel natural por até 8 semanas</li>
+                        <li>Nutrição profunda com queratina</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openModal('Lash Lifting')">Agendar</button>
+                </div>
+
+                <div class="card">
+                    <h3>Limpeza de Pele Premium</h3>
+                    <p class="price">R$ 180<span> / sessão</span></p>
+                    <ul>
+                        <li>Higienização e esfoliação profunda</li>
+                        <li>Extração manual de cravos</li>
+                        <li>Peeling de diamante</li>
+                        <li>Mascara hidratante e LEDterapia</li>
+                    </ul>
+                    <button class="btn btn-card" onclick="openModal('Limpeza de Pele Premium')">Agendar</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <h2 class="section-title">O que dizem <span>nossas clientes</span></h2>
+            <div class="depoimentos-grid">
+                <div class="depoimento">
+                    <p>"Atendimento impecável! O design de sobrancelhas mudou meu olhar de forma supersutil e natural.
+                        Não troco o AC Studio por nada!"</p>
+                    <h4>— Camila Silveira</h4>
+                    <span>Cliente desde 2024</span>
+                </div>
+                <div class="depoimento">
+                    <p>"A limpeza de pele foi uma experiência maravilhosa de relaxamento. Minha pele ficou renovada e
+                        radiante. Super recomendo!"</p>
+                    <h4>— Vanessa Rocha</h4>
+                    <span>Cliente assídua</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE AGENDAMENTO -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Agendar Procedimento</h3>
+            <p>Preencha os dados abaixo para confirmar a disponibilidade no WhatsApp do Studio.</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" required placeholder="Seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Procedimento Desejado</label>
+                    <select id="servico" required>
+                        <option value="Design de Sobrancelhas">Design de Sobrancelhas</option>
+                        <option value="Lash Lifting">Lash Lifting / Cílios</option>
+                        <option value="Limpeza de Pele Premium">Limpeza de Pele Premium</option>
+                        <option value="Outro Procedimento">Outro Procedimento</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data Desejada</label>
+                    <input type="date" id="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Horário de Preferência</label>
+                    <select id="hora" required>
+                        <option value="09:00">09:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="18:00">18:00</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Agendar via WhatsApp 📱</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AC Studio Beleza & Estética. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
