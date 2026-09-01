@@ -1,8 +1,10 @@
 # ✨ AC Studio — Beleza & Estética Avançada
 
-Uma landing page responsiva e elegante desenvolvida em *Dark Theme* com paleta Bronze e Dourado Nude, focada na conversão e agendamento de procedimentos estéticos via WhatsApp.
+Landing Page moderna e responsiva desenvolvida para um salão de beleza.
 
+## 🎯 Objetivo
 
+Uma landing page responsiva e elegante desenvolvida para um salão de beleza, focada na conversão e agendamento de procedimentos estéticos via WhatsApp.
 
 ---
 
