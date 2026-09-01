@@ -28,8 +28,26 @@ Projeto desenvolvido com tecnologias nativas do front-end, garantindo alta perfo
 
 ---
 
-## 💻 Como Executar o Projeto
+## 🌐 Demonstração
 
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/marcosfrontend-dev/landing-page-salao-beleza.git]
+https://ac-studio-beleza-e-estetica.netlify.app/
+
+## 📱 Responsividade
+
+Projeto desenvolvido para funcionar em:
+
+- Desktop
+- Tablet
+- Smartphone
+
+## 👨‍💻 Desenvolvedor
+
+Marcos Oliveira
+
+Desenvolvedor Front-End.
+
+GitHub:
+https://github.com/marcosfrontend-dev
+
+LinkedIn:
+https://www.linkedin.com/in/marcosodev/
