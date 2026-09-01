@@ -30,4 +30,4 @@ Projeto desenvolvido com tecnologias nativas do front-end, garantindo alta perfo
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/marcosfrontend-dev/salao-beleza.git]
+   git clone [https://github.com/marcosfrontend-dev/landing-page-salao-beleza.git]
